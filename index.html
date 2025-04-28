@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="func.js"></script>
+    <title>Base converter</title>
+</head>
+<body>
+    <div class="container">
+    <h1>Base converter</h1>
+    <p>Convert numbers between different bases (Binary, Decimal, Hex, Octal)</p>
+
+    <p class="buttons1"> FROM
+        <button class="bin" onclick="setBase(2)">Binary (2)</button>
+        <button class="oct" onclick="setBase(8)">Octal (8)</button>
+        <button class="dec" onclick="setBase(10)">Decimal (10)</button>
+        <button class="hexa" onclick="setBase(16)">Hexadecimal (16)</button>
+    </p>
+
+    <label for="num">Number</label>
+    <input type="text" id="num" placeholder="enter a valid number">
+
+    <p class="buttons2"> TO
+        <button class="bin" onclick="setNewBase(2)">Binary (2)</button>
+        <button class="oct" onclick="setNewBase(8)">Octal (8)</button>
+        <button class="dec" onclick="setNewBase(10)">Decimal (10)</button>
+        <button class="hexa" onclick="setNewBase(16)">Hexadecimal (16)</button>
+    </p>
+
+    <p>RESULT</p>
+    <p id="res"></p>
+
+    <button id="convert" onclick="cnvrt()">CONVERT</button>
+</div>
+</body>
+</html>
